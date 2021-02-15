@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial;
+          padding: 10px;
+          background: #98e2ec;
+          font-family: times, Times New Roman, times-roman, georgia, serif;
+          font-weight: bold;
+        }
+
+        /* Header/Blog Title */
+        .header {
+          padding: 13px;
+          text-align: center;
+          background: rgb(186, 161, 233)
+        }
+
+        .header h1 {
+          font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+          overflow: hidden;
+          background-color: rgb(186, 161, 233);
+          font-family: times, Times New Roman, times-roman, georgia, serif;
+          font-weight: bold;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+          float: left;
+          display: block;
+          color:black;
+          text-align: center;
+          padding: 30px;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+          float: left;
+          width: 25%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+          float: left;
+          width: 75%;
+          background-color:  #98e2ec;
+          padding-left: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+          background-color: rgb(223, 201, 243);
+          padding: 20px;     
+          margin-top: 20px;     
+        }
+
+        .navi-decor {
+          float: left;
+          display: block;
+          color:black;
+          text-align: center;
+          padding: 30px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+          .leftcolumn, .rightcolumn {
+            width: 100%;
+            padding: 30%;
+          }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+          .topnav a {
+            float: none;
+            width: 100%;
+        }
+      }
+      </style>
+    </head>
+        <div class="row">
+          <div class="leftcolumn">
+            <div class="nav-decor">
+              <nav class="topnav" id="navbar">
+                <header>
+                </header>
+                <a href="#Ingredients_for_Cheesecake" class="nav-link">
+                  Ingredients for Cheesecake
+                </a>
+                <a href="#Wrapping_the_Pan" class="nav-link">
+                  Wrapping the Pan
+                </a>
+                <a href="#Make_the_crust_for_cheesecake" class="nav-link">
+                  Make the Crust for Cheesecake
+                </a>
+                <a href="#Make_the_Batter" class="nav-link">
+                  Make the Batter
+                </a>
+                <a href="#Cheesecake_Baking" class="nav-link">
+                  Cheesecake Baking
+                </a>
+              </nav>      
+            </div>
+          </div>
+          <div class="rightcolumn">
+            <div class="header">
+              <h1>New York-Style Cheesecake</h1>
+              <p>Super easy recipe</p>
+              <img src="pics/pic-1.png" alt="Cheesecake photo" id="image" style="height:200px;" >
+            </div>
+            <main id="main-doc">
+              <div class="card">
+                <section class="main-section" id="Ingredients_for_Cheesecake">
+                  <header>Ingredients for Cheesecake</header>
+                  <code></code>
+                    <ol>
+                      <li>Philadelphia Cheesecream (Origianl) - 2 Packs</li>
+                      <li>Cracker Crumbs - 350 gr </li>
+                      <li>Eggs - 5 pieces </li>
+                      <li>Butter - 150 gr</li>
+                      <li>Sugar, Salt, Vanilla, Lemon Zest</li>
+                    </ol>
+                  <img src="pics/pic-2.png" alt="Ingredients photo" style="height:200px;" >
+                  <p> - Before we get to the recipe, you’ll need a nine or ten-inch springform pan and 18-inch heavy-duty aluminum foil.</p>
+                  <p> - The springform pan features sides that can be removed from the base, so you can release the cheesecake easily without having to flip the whole pan over (this would be a disaster with a cheesecake!).</p>
+                </section>
+              </div>
+              <div class="card">
+                <section class="main-section" id="Wrapping_the_Pan">
+                  <header>Wrapping the Pan</header>
+                  <code></code>
+                  <img src="pics/pic-3.png" alt="Wrapping Pan" style="height:200px;">
+                  <p> - Next wrap the springform pan with one large piece of heavy-duty aluminum foil, covering the underside of the pan and extending all the way to the top.</p>
+                  <p> - Repeat with another sheet of foil for insurance. Spray the inside of the pan with nonstick cooking spray.</p>
+                </section>
+              </div>
+              <div class="card">
+                <section class="main-section" id="Make_the_crust_for_cheesecake">
+                  <header>Make the Crust for Cheesecake</header>
+                  <code></code>
+                  <img src="pics/pic-4.png" alt="Crust Photo" style="height:200px;" >
+                  <p> - Make the crust: In a medium bowl, combine the graham cracker crumbs, melted butter, sugar, and salt. Stir until well combined.</p>
+                  <p> - Press the crumbs into an even layer on the bottom of the prepared pan. Bake the crust for 10 minutes, until set.</p>
+                </section>
+              </div>
+              <div class="card">
+                <section class="main-section" id="Make_the_Batter">
+                  <header>Make the Batter</header>
+                  <code></code>
+                  <img src="pics/pic-5.png" alt="Batter Photo" style="height:200px;" >
+                  <p> - Make the batter: In the bowl of an electric mixer fitted with the paddle attachment or beaters, combine the cream cheese, sugar, eggs and flour. </p>
+                  <p> - Make sure the batter is uniform but do not over-mix. Pour the batter on top of the crust.</p>
+                </section>
+              </div>
+              <div class="card">
+                <section class="main-section" id="Cheesecake_Baking">
+                  <header>Cheesecake Baking</header>
+                  <code></code>
+                  <img src="pics/pic-6.png" alt="Batter Photo" style="height:200px;" >
+                  <p> - The water bath regulates the temperature and keeps the cheesecake baking at an even, low heat. The steam created by the water bath also protects the cheesecake from drying out and cracking.</p>
+                  <p> - Bake until the cake is just set, 1 hour and 30 minutes to 1 hour and 45 minutes (the cake should not look liquidy at all but will wobble just a bit when the pan is nudged; it will continue to cook as it cools)</p>
+                  <p> - Cool the cheesecake in the water bath until the water is just warm, about 45 minutes. Remove the springform pan from the water bath, discard the foil, and transfer the cheesecake to the refrigerator to cool for at least 8 hours or overnight.</p>
+                </section>
+              </div>
+            </main>
+          </div>
+        </div>
+    </body>
+</html>
